@@ -2,7 +2,7 @@
 React Native CountDown
 
 ## Installation
-Run `npm install react-native-countdown-component --save` OR `yarn add react-native-countdown-component --save`
+Run `npm install @ilterugur/react-native-countdown-component --save` OR `yarn add @ilterugur/react-native-countdown-component --save`
 
 ## Props
 | Name | Description | Type | Default Value |
@@ -30,7 +30,7 @@ Run `npm install react-native-countdown-component --save` OR `yarn add react-nat
 
 ## Code
 ```javascript
-import CountDown from 'react-native-countdown-component';
+import CountDown from '@ilterugur/react-native-countdown-component';
 
 render() {
     return (
@@ -50,7 +50,7 @@ render() {
 
 ## Code
 ```javascript
-import CountDown from 'react-native-countdown-component';
+import CountDown from '@ilterugur/react-native-countdown-component';
 
 render() {
     return (
@@ -75,7 +75,7 @@ render() {
 
 ## Code
 ```javascript
-import CountDown from 'react-native-countdown-component';
+import CountDown from '@ilterugur/react-native-countdown-component';
 
 render() {
     return (

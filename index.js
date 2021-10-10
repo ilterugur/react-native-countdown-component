@@ -8,8 +8,8 @@ import {
   TouchableOpacity,
   AppState
 } from 'react-native';
-import _ from 'lodash';
 import {sprintf} from 'sprintf-js';
+import accurateInterval from 'accurate-interval'
 
 const DEFAULT_DIGIT_STYLE = {backgroundColor: '#FAB913'};
 const DEFAULT_DIGIT_TXT_STYLE = {color: '#000'};
@@ -47,7 +47,12 @@ class CountDown extends React.Component {
 
   constructor(props) {
     super(props);
-    this.timer = setInterval(this.updateTimer, 1000);
+
+    //this.timer = setInterval(this.updateTimer, 1000);
+
+    //*******changed the default SetInterval for a more accurate one********////
+    this.timer = accurateInterval(this.updateTimer, 1000, {aligned: true, immediate: false});
+    //**********************************************////
   }
 
   componentDidMount() {
@@ -55,7 +60,8 @@ class CountDown extends React.Component {
   }
 
   componentWillUnmount() {
-    clearInterval(this.timer);
+    //clearInterval(this.timer);
+    this.timer.clear();
     AppState.removeEventListener('change', this._handleAppStateChange);
   }
 
@@ -134,7 +140,7 @@ class CountDown extends React.Component {
     const {digitStyle, digitTxtStyle, size} = this.props;
     return (
       <View style={[
-        styles.digitCont,        
+        styles.digitCont,
         {width: size * 2.3, height: size * 2.6},
         digitStyle,
       ]}>

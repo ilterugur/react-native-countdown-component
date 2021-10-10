@@ -1,10 +1,10 @@
 {
-  "name": "react-native-countdown-component",
-  "version": "2.7.1",
-  "description": "React Native CountDown Component",
+  "name": "@ilterugur/react-native-countdown-component",
+  "version": "3.0.1",
+  "description": "React Native Accurate Countdown Component",
   "repository": {
     "type": "git",
-    "url": "https://github.com/talalmajali/react-native-countdown-component.git"
+    "url": "https://github.com/ilterugur/react-native-countdown-component.git"
   },
   "keywords": [
     "react-native",
@@ -18,16 +18,17 @@
     "countdown"
   ],
   "author": {
-    "name": "Talal Majali",
-    "email": "t.majali93@gmail.com"
+    "name": "Uğur İLTER",
+    "email": "iletisim@ugurilter.com"
   },
-  "homepage": "https://github.com/talalmajali/react-native-countdown-component",
+  "homepage": "https://github.com/ilterugur/react-native-countdown-component",
   "bugs": {
-    "url": "https://github.com/talalmajali/react-native-countdown-component/issues"
+    "url": "https://github.com/ilterugur/react-native-countdown-component/issues"
   },
   "dependencies": {
     "lodash": "^4.17.13",
     "sprintf-js": "^1.1.1",
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.5.8",
+    "accurate-interval": "1.0.9"
   }
 }
